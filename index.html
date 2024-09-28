@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <!-- ~====>title icon -->
+    <link rel="icon" href="./assets/image/icons8-add-user-24.png" />
+    <!-- !####icon title -->
+    <link rel="icon" href="./assets/image/bookmark.png" />
+    <!-- ~~~~~ google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- !!!!!!fontasome -->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <!-- ^^^^^bootdstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- *#####stylesheet -->
+    <link rel="stylesheet" href="./assets/css/masster.css" />
+    <!-- ~#####media -->
+    <link rel="stylesheet" href="./assets/css/media.css" />
+  </head>
+  <body>
+    <main>
+      <section
+        class="w-100 vh-100 d-flex justify-content-center align-items-center"
+      >
+        <div class="container d-flex justify-content-center">
+          <div class="form p-4 position-relative">
+            <div class="text-center p-4 mb-2"><h1>Smart Login System</h1></div>
+            <div>
+              <button
+                class="position-absolute bg-transparent border-0 top-0 end-0 m-4"
+                onclick="mood()"
+              >
+                <i class="fa-solid fa-sun text-white fs-4 mood"></i>
+              </button>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter username"
+                id="signUpName"
+                oninput="Validate(nameRegex , signUpName)"
+              />
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter email"
+                id="signUpEmail"
+                oninput="Validate(emailRegex, signUpEmail)"
+              />
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Enter password"
+                id="signUpPass"
+                oninput="Validate(passwordRegex, signUpPass)"
+              />
+              <p class="text-center"></p>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-signup" onclick="caretAcoount() ">
+                  sign up
+                </button>
+              </div>
+            </div>
+            <p class="text-center p-3">
+              You have an account?
+              <a href="login.html" class="text-decoration-none">Signin</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ^####index js -->
+    <script src="./assets/js/index.js"></script>
+    <!-- !#### bootstrap js -->
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

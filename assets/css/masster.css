@@ -1,0 +1,118 @@
+:root {
+  --form-h1-colore: #b1b1b1;
+  --form-box-shadow-colore: #b1b1b1;
+  --white-colore: #fff;
+  --placeholder-colore: #ffffffa6;
+  --form-control-border-colore: #6e6e6e;
+  --form-btn-border-colore: #6e6e6e;
+  --form-btn-colore: #ffffffa2;
+  --form-btn-hover-bg-colore: #6e6e6ea3;
+  --form-btn-hover-colore: #e5e5e5;
+  --form-btn-foucs-box-sh-colore: #cac4c4;
+  --form-a-colore: #b6b1b1;
+  --nav-logo-colore: #b8c4cf;
+  --btn-outline-colore: #95a1ac;
+  --caption-colore: #d5c9c9;
+}
+
+body {
+  background-image: linear-gradient(to right, #00000040, #0000007a),
+    url(../image/moon-7021271_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.form {
+  width: 60%;
+  border: 2px solid #6f6f942b;
+  border-radius: 13px;
+  backdrop-filter: blur(60px);
+  box-shadow: 0px 0px 11px 0px var(--form-box-shadow-colore);
+}
+.form h1 {
+  color: var(--form-h1-colore);
+}
+.form .form-control {
+  background: transparent !important;
+  margin-bottom: 25px;
+  border-color: var(--form-control-border-colore);
+  color: var(--white-colore);
+}
+.form-control:focus {
+  border-color: var(--white-colore);
+  box-shadow: none;
+}
+
+.form-control:focus::placeholder {
+  color: var(--white-colore);
+}
+.form-control::placeholder {
+  color: var(--placeholder-colore);
+}
+.form .btn {
+  width: 90%;
+  border: 1px solid var(--form-btn-border-colore);
+  color: var(--form-btn-colore);
+  border-radius: 10px;
+  font-size: 20px;
+}
+.form .btn:hover {
+  background-color: var(--form-btn-hover-bg-colore);
+  color: var(--form-btn-hover-colore);
+  border-color: var(--form-btn-hover-bg-colore);
+}
+.form .btn:focus {
+  box-shadow: 0px 0px 5px 2px var(--form-btn-foucs-box-sh-colore);
+}
+.form p,
+a {
+  color: var(--form-a-colore);
+  letter-spacing: 1.1px;
+}
+.form a:hover {
+  color: var(--form-a-colore);
+  text-decoration: underline !important;
+}
+
+nav {
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 14px 0px var(--placeholder-colore);
+}
+nav a {
+  color: var(--nav-logo-colore);
+}
+nav a:hover {
+  color: var(--nav-logo-colore);
+}
+.btn-outline-secondary {
+  color: var(--nav-logo-colore);
+  border-color: #95a1ac;
+}
+section {
+  height: 75vh;
+}
+section .box {
+  height: 75vh;
+}
+section .caption {
+  width: 65%;
+  padding: 90px;
+  color: var(--caption-colore);
+  margin-top: 42px;
+  backdrop-filter: blur(25px);
+  border-radius: 10px;
+  box-shadow: 0 0 19px 0px var(--placeholder-colore);
+}
+section .caption h1 {
+  font-size: 50px;
+}
+.btn-logout {
+  background-color: transparent;
+  border: 1px solid var(--form-btn-border-colore) !important;
+  color: var(--white-colore) !important;
+}
+.btn-logout:hover {
+  border: 1px solid var(--form-btn-hover-bg-colore) !important;
+  color: var(--form-btn-hover-colore) !important;
+  background-color: var(--form-btn-hover-bg-colore);
+}
