@@ -2,4 +2,12 @@
   .form {
     width: 80%;
   }
+  .caption h1 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 686px) {
+  .caption h1 {
+    font-size: 25px;
+  }
 }
